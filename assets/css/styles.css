@@ -1,4 +1,62 @@
+* {
+    list-style: none;
+    text-decoration-color: black;
+    text-decoration: none;
+}
+
 body {
-    background-color: firebrick;
+    background-color: white;
     color: forestgreen;
+    font-family: cursive;
+}
+
+#nav ul {
+    font color: white;
+    background-color: black;
+    font-size: 200%;
+    padding: 0;
+    margin: 5em;
+    border-color: red;
+    padding: 0;
+
+}
+
+#nav li {
+    display: inline;
+
+}
+
+.class {
+    background: black;
+    color: white;
+
+
+}
+
+
+
+div.second {
+    font-size: 20%;
+    line-height: 300%;
+    text-align: center;
+    margin: auto;
+    border-color: solid #333;
+}
+
+#first {
+    background: orange;
+    margin: 8px;
+    border: color #fff;
+    border-radius: 20px 28px;
+
+}
+
+.second {
+    background-color: beige;
+}
+
+.first {
+    text-align: center;
+    font-size: 200%;
+    line-height: 300%;
 }
