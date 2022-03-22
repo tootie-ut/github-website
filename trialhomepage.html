@@ -1,0 +1,117 @@
+<DOCTYPE! html>
+    <html lang="en">
+
+    <head>
+        <title>Grid title page</title>
+        <meta charset="utf-8">
+    </head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .wrapper {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-gap: 1em;
+            grid-auto-rows: minmax (100px, auto);
+        }
+
+        body {
+            background-color: #454545;
+        }
+
+        .wrapper div {
+            background-color: #eee;
+        }
+
+        .box1 {
+            grid-column: 1/6;
+            grid-row: 1;
+
+        }
+
+        .box2 {
+            grid-column: 1;
+            grid-row: 2;
+        }
+
+        .box3 {
+            grid-column: 2/6;
+            grid-row: 2;
+        }
+
+        .box4 {
+            grid-column: 1;
+            grid-row: 3;
+            background: url(assets/images/SA+Adair+to+Black+Mtn+B&W.jpeg);
+            background-size: contain;
+            overflow: hidden;
+            /*            background-size: contain;*/
+            opacity: 0.5;
+
+        }
+
+        .box5 {
+            grid-column: 3/6;
+            grid-row: 3;
+        }
+
+        .box6 {
+            grid-column: 1/6;
+            grid-row: 6;
+        }
+
+    </style>
+
+    <body>
+        <h1>Heading</h1>
+
+        <div class='wrapper'>
+            <div class="box1">search bar(box1)</div>
+            <div class="box2">logo box2</div>
+            <div class="box3">nav box 3<div id="nav">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="box4">
+                <!--                <img src="assets/images/SA+Adair+to+Black+Mtn+B&W.jpeg" alt='photo'> photo box 4-->
+
+            </div>
+            <div class="box5">
+                <p> Incorporating contour 556 returns for the 4th edition in October 2022. We have consolidated our support with locals and others around Australia through a successful fundraising event using Chuffed that concluded in June 2021.
+
+                <p>Canberra’s Art Biennial comprises core installations around the central lake landscape (contour 556), as well as an expanded presence in Canberra City/City Hill.</p>
+
+
+                <p>We will return to the Kingston Arts precinct, with satellite installations at Thor’s Mixing Room Gallery and Barton Art Box as in 2020.</p>
+
+
+                <p>Following feedback from audience surveys last year, we will expand our reach to Belconnen, partnering with the University of Canberra, (contour 616) and will include installations at the National Arboretum Canberra (contour 656).</p>
+
+
+                <p>Artists will be responding to the designed city of Canberra: represented by Australia’s political, cultural and physical history. The event engages people of all ages and abilities, delighting, puzzling and encouraging interaction with art and public space. </p>
+
+
+                <p>Canberra’s Art Biennial: contour 556 is an equal access event, entirely free to the public, it occurs in the public realm and all locations are fully accessible. A diverse group of artists presents diverse stories to Canberra’s multicultural community. contour 556 provides opportunities for audience engagement through a series of public programs including performances, talks, tours, workshops, a people’s choice award and digital platform. </p>
+
+
+                text box5
+            </div>
+            <div class="box6">footer box6</div>
+
+
+
+        </div>
+
+    </body>
+
+
+    </html>

@@ -60,3 +60,9 @@ div.second {
     font-size: 200%;
     line-height: 300%;
 }
+
+@media (min-width) {
+    p {
+        color: red
+    }
+}
