@@ -10,6 +10,8 @@ body {
     font-family: cursive;
 }
 
+/*
+
 #nav ul {
     font color: white;
     background-color: black;
@@ -23,6 +25,43 @@ body {
 
 #nav li {
     display: inline;
+*/
+
+
+.nav {
+    float: right;
+    list-style: none;
+    margin-top: 20px;
+    padding-right: 30px;
+}
+
+.nav li {
+    display: inline-block;
+    border: 1px #ccc solid;
+    border-radius: 20px;
+    text-decoration: none;
+
+}
+
+.nav li a {
+    text-decoration: none;
+    color: aliceblue;
+    padding: 5px 20px;
+    font-size: 30px;
+    font-family: sans-serif;
+
+
+}
+
+.nav li a: hover {
+
+    background: black;
+    color: darkorange;
+    border-radius: 20px;
+    text-decoration-line: underline;
+
+
+}
 
 }
 
