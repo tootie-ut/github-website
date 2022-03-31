@@ -4,6 +4,18 @@ body {
     font: helvetica;
     color: white;
     padding: 10em;
+    font-size: 20px;
+}
+
+#logo {
+    max-width: 1rem;
+    height: auto;
+}
+
+#map {
+    height: 650px;
+    width: 1000px;
+    
 }
 
 .header {
@@ -24,8 +36,6 @@ p {
 
 .nav li {
     display: inline-block;
-    border: 1px #ccc solid;
-    border-radius: 20px;
     text-decoration: none;
 
 }
@@ -41,13 +51,106 @@ p {
 }
 
 .nav li a:hover {
-
-    background: black;
     color: darkorange;
-    border-radius: 20px;
     text-decoration-line: underline;
+}
+
+.search-bar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #666;
+    height: 40px;
+    border-radius: 40px;
+    padding: 1em;
+
+}
+
+.search-bar:hover > .search-text {
+    width: 240px;
+    padding: 0 6px;
+}
+
+.search-bar:hover > .search-button {
+    background: darkorange;
+}
+
+.search-button {
+    color: blue;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.6s;
+
+}
 
 
+.search-text {
+    color: #333;
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+
+}
+
+
+
+.boxcontainer {
+    padding: 10em;
+}
+
+.box {
+    width: 300px;
+    height: 300px;
+    float: left;
+    background: #f4f4f4;
+    display: grid;
+    grid-template-columns: repeat (6, 1fr);
+    padding: 1em;
+    grid-column-gap: 10rem;
+
+}
+
+
+.footer {
+    float: right;
+    list-style: none;
+    margin-top: 20px;
+    padding-right: 30px;
+}
+
+.footer li {
+    display: inline-block;
+    text-decoration: none;
+
+}
+
+.footer li a {
+    text-decoration: none;
+    color: aliceblue;
+    padding: 5px 20px;
+    font-size: 30px;
+    font-family: sans-serif;
+
+
+}
+
+.footer li a:hover {
+    color: darkorange;
+    text-decoration-line: underline;
 }
 
 /*
@@ -73,8 +176,11 @@ p {
 }
 */
 
-@media (min-width) {
-    p {
-        color: red
-    }
+@media (min-width:)
 }
+
+@media (max-width: 768px) {
+    .testimonials {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }

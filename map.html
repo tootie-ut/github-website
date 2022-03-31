@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>map</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/stylesnew.css">
+    <script src="https://kit.fontawesome.com/d76a72ed41.js" crossorigin="anonymous"></script>
+    <script src="assets/script.js" defer></script>
+</head>
+
+<body>
+    <div id="logo"><a href="index.html"> <img src="assets/images/newlogo.png" alt="logo"> </a>
+    </div>
+    <div class="wrapper">
+        <nav>
+            <ul class="nav">
+                <li><a href="artists.html">artists</a></li>
+                <li><a href="map.html">map/location</a></li>
+                <li><a href="ourteam.html">our team</a></li>
+                <li><a href="#">donate</a></li>
+
+            </ul>
+        </nav>
+    </div>
+    <div class="search-bar">
+        <input class="search-text" type="text" name="" placeholder="search">
+        <a class="search-button" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+    </div>
+
+    <div id='map' style='width: 400px; height: 300px;'></div>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoidXRwaWtsZXIiLCJhIjoiY2wwcmM0eWtyMDIwNzNkcXB0bnpneWZnMSJ9.7VV66Ac4S8NH6lXX23I6Ng';
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/dark-v10'
+        });
+
+    </script>
+
+
+    <footer class="footer">
+        <ul>
+            <li><a href="#">further resources</a></li>
+            <li><a href="#">covid 19</a></li>
+            <li><a href="#">supporters</a></li>
+            <li><a href="#">contact us</a></li>
+
+        </ul>
+    </footer>
+
+</body>
+
+</html>

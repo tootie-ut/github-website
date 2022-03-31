@@ -28,6 +28,7 @@ body {
 */
 
 
+/*
 .nav {
     float: right;
     list-style: none;
@@ -62,6 +63,7 @@ body {
 
 
 }
+*/
 
 }
 
@@ -100,8 +102,10 @@ div.second {
     line-height: 300%;
 }
 
+/*
 @media (min-width) {
     p {
         color: red
     }
 }
+*/
