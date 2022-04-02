@@ -3,19 +3,22 @@ body {
     font-family: sans-serif;
     font: helvetica;
     color: white;
-    padding: 10em;
+    padding: 1em;
     font-size: 20px;
 }
 
-#logo {
-    max-width: 1rem;
-    height: auto;
+.logo img {
+    max-width: 30px;
+    /*
+    height: 30px;
+    width: 50px;
+*/
 }
 
 #map {
     height: 650px;
     width: 1000px;
-    
+
 }
 
 .header {
@@ -32,11 +35,13 @@ p {
     list-style: none;
     margin-top: 20px;
     padding-right: 30px;
+
 }
 
 .nav li {
     display: inline-block;
     text-decoration: none;
+    padding: inherit;
 
 }
 
