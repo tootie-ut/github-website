@@ -4,6 +4,9 @@
 <head>
     <meta charset="utf-8">
     <title>contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=M+PLUS+Rounded+1c:wght@300&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
@@ -30,7 +33,7 @@
         <div class="flextwo">
             <div class="searching">
                 <div class="search-bar">
-                    <input class="search-text" type="text" name="" placeholder="search">
+                    <input class="search-text" type="text" name="name" placeholder="search">
                     <a class="search-button" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
                 </div>
             </div>
@@ -44,41 +47,42 @@
             <ul class="nav">
                 <li><a href="artists.html">artists</a></li>
                 <li><a href="map.html">map/location</a></li>
-                <li><a href="#">our team</a></li>
+                <li><a href="ourteam.html">our team</a></li>
                 <li><a href="#">donate</a></li>
 
             </ul>
         </nav>
     </div>
+    <div class="mainthree">
+        <div class="contact ">
+            <form>
+                <div class="input-group">
+                    <input type="text" id="name" required>
+                    <label for="name">Name</label>
+                </div>
 
-    <div class="contact ">
-        <form>
-            <div class="input-group">
-                <input type="text" id="name" required>
-                <label for="name"><i class="fa-solid fa-user-pen"></i> name</label>
-            </div>
+                <div class="input-group">
+                    <input type="text" id="email" required>
+                    <label for="name">Email</label>
+                </div>
 
-            <div class="input-group">
-                <input type="text" id="name" required>
-                <label for="name"><i class="fa-solid fa-at"></i> email</label>
-            </div>
+                <div class="input-group">
+                    <input type="text" id="subject" required>
+                    <label for="name">Subject</label>
+                </div>
 
-            <div class="input-group">
-                <input type="text" id="name" required>
-                <label for="name"><i class="fa-solid fa-comment-pen"></i> subject</label>
-            </div>
-
-            <div class="input-group">
-                <input type="text" id="name" required>
-                <label for="name"><i class="fa-solid fa-message-text"></i> message</label>
-            </div>
-
-
-            <button type="submit"><i class="fa-solid fa-paper-plane"></i>Submit</button>
+                <div class="input-group">
+                    <textarea id="message" rows="8">  </textarea>
+                    <label for="name"> Message</label>
+                </div>
 
 
-        </form>
+                <button type="submit"><i class="fa-solid fa-paper-plane"></i>Submit</button>
 
+
+            </form>
+
+        </div>
     </div>
     <div class="acknowledge">
         <p>
@@ -89,7 +93,6 @@
     </div>
 
     <footer class="footer">
-        <div class="item"></div>
         <div class="item right">
             <ul>
                 <li><a href="#">further resources</a></li>
