@@ -8,62 +8,118 @@
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
     <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/stylesnew.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://kit.fontawesome.com/d76a72ed41.js" crossorigin="anonymous"></script>
     <script src="assets/script.js" defer></script>
 </head>
 
 <body>
-    <div class="wrapper">
-		<header>
-			<div class="item" id="logo">
-				<a href="index.html"> <img src="assets/images/newlogo.png" alt="logo"> </a>
-			</div>
-			<div class="item search-bar">
-				<input class="search-text" type="text" name="" placeholder="search"> <a class="search-button" href="#"><i class="fa-solid fa-magnifying-glass"></i></a> </div>
-			<nav class="item">
-				<ul class="nav">
-					<li><a href="artists.html">artists</a></li>
-					<li><a href="map.html">map/location</a></li>
-					<li><a href="ourteam.html">our team</a></li>
-					<li><a href="#">donate</a></li>
-				</ul>
-			</nav>
-		</header>
-    <h2>canberra art biennial 2022</h2>
-    <p>NATIONAL ARBORETUM CANBERRA / UNIVERSITY OF CANBERRA / AUSTRALIAN NATIONAL UNIVERSITY / CIVIC SQUARE / WEST BASIN / 8 PETRIE PLAZA / 16 MARCUS CLARKE STREET / KING O’MALLEYS / HASSETT PARK / LAKE BURLEY GRIFFIN CENTRAL BASIN / COMMONWEALTH PLACE / BOWEN PLACE / BOWEN PARK / BARTON ARTBOX / COX GALLERY / CANBERRA GLASSWORKS / THOR’S HAMMER MIXING ROOM GALLERY / CANBERRA MUSEUM AND GALLERY / MANNING CLARK HOUSE</p>
-    <div class="search-bar">
-        <input class="search-text" type="text" name="" placeholder="search">
-        <a class="search-button" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+
+    <div class="flexone">
+        <div class="flextwo">
+            <div id="logo"><a href="index.html"> <img src="assets/images/newlogo.png" alt="logo"> </a>
+            </div>
+        </div>
+
+        <div class="flextwo">
+            <div class="headline">
+                <h2>canberra art biennial 2022</h2>
+            </div>
+        </div>
+
+        <div class="flextwo">
+            <div class="searching">
+                <div class="search-bar">
+                    <input class="search-text" type="text" name="" placeholder="search">
+                    <a class="search-button" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div id='map' style='width: 600px; height: 600px;'></div>
 
-    <script>
-        mapboxgl.accessToken = 'pk.eyJ1IjoidXRwaWtsZXIiLCJhIjoiY2wwcmM0eWtyMDIwNzNkcXB0bnpneWZnMSJ9.7VV66Ac4S8NH6lXX23I6Ng';
-        var map = new mapboxgl.Map({
-            container: 'map',
-            style: 'mapbox://styles/mapbox/dark-v10',
-            center: [149.131, -35.280],
-            zoom: 12,
 
-        });
+    <div class="navframe">
+        <nav>
+            <ul class="nav">
+                <li><a href="artists.html">artists</a></li>
+                <li><a href="map.html">map/location</a></li>
+                <li><a href="ourteam.html">our team</a></li>
+                <li><a href="#">donate</a></li>
 
-    </script>
+            </ul>
+        </nav>
+    </div>
 
-	<footer class="footer">
+
+
+
+    <div class="mainmap">
+
+        <div id='map' style='width: 800px; height: 800px;'></div>
+
+        <div class="maintxt">
+            <P>National arboretum Canberra
+                <br> University of Canberra
+                <br>Australian National University
+                <br>Civic square
+                <br>West basin
+                <br> 8 petrie plaza
+                <br>16 marcus clarke street
+                <br>King O’malleys
+                <br> Hassett park
+                <br>Lake burley griffin central basin
+                <br> Commonwealth place
+                <br> Bowen place
+                <br>Bowen park
+                <br> Barton artbox
+                <br>Cox gallery
+                <br>Canberra glassworks
+                <br> Thor’s hammer mixing room gallery
+                <br> Canberra museum and gallery
+                <br>Manning clark house
+
+            </p>
+
+        </div>
+
+        <script>
+            mapboxgl.accessToken = 'pk.eyJ1IjoidXRwaWtsZXIiLCJhIjoiY2wwcmM0eWtyMDIwNzNkcXB0bnpneWZnMSJ9.7VV66Ac4S8NH6lXX23I6Ng';
+            var map = new mapboxgl.Map({
+                container: 'map',
+                style: 'mapbox://styles/mapbox/dark-v10',
+                center: [149.131, -35.280],
+                zoom: 12,
+
+            });
+
+        </script>
+
+    </div>
+
+
+    <div class="acknowledge">
+        <p>
+            contour 556 acknowledges the Ngunnawal people, the traditional custodians of the land on which we live, work, rest and play.
+
+        </p>
+
+    </div>
+
+    <footer class="footer">
         <div class="item"></div>
-        <div class="item right"><ul>
-			<li><a href="#">further resources</a></li>
-			<li><a href="#">covid 19</a></li>
-			<li><a href="#">supporters</a></li>
-			<li><a href="#">contact us</a></li>
-		</ul></div>
+        <div class="item right">
+            <ul>
+                <li><a href="#">further resources</a></li>
+                <li><a href="#">covid 19</a></li>
+                <li><a href="#">supporters</a></li>
+                <li><a href="contactus.html">contact us</a></li>
+            </ul>
+        </div>
+    </footer>
 
-        
-	</footer>
-    	</div>
+
+
+
 
 </body>
-
-</html>
