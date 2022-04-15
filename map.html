@@ -60,11 +60,13 @@
 
     <div class="mainmap">
 
-        <div id='map' style='width: 800px; height: 800px;'></div>
+        <div id='map' style='width: 600px; height: 600px;'></div>
 
-        <div class="maintxt">
 
-            <ul>
+        <div class="locationbox">
+            <ul class="locationlist">
+                <h3>Location list</h3>
+                <br>
                 <li>National Arboretum Canberra</li>
                 <li>University of Canberra</li>
                 <li>Australian National University</li>
@@ -84,25 +86,25 @@
                 <li>Thor’s Hammer Mixing Room Gallery</li>
                 <li>Canberra Museum and Gallery</li>
                 <li>Manning Clark House</li>
+
             </ul>
 
-
-
         </div>
-
-        <script>
-            mapboxgl.accessToken = 'pk.eyJ1IjoidXRwaWtsZXIiLCJhIjoiY2wwcmM0eWtyMDIwNzNkcXB0bnpneWZnMSJ9.7VV66Ac4S8NH6lXX23I6Ng';
-            var map = new mapboxgl.Map({
-                container: 'map',
-                style: 'mapbox://styles/mapbox/dark-v10',
-                center: [149.131, -35.280],
-                zoom: 12,
-
-            });
-
-        </script>
-
     </div>
+
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoidXRwaWtsZXIiLCJhIjoiY2wwcmM0eWtyMDIwNzNkcXB0bnpneWZnMSJ9.7VV66Ac4S8NH6lXX23I6Ng';
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/dark-v10',
+            center: [149.131, -35.280],
+            zoom: 12,
+
+        });
+
+    </script>
+
+
 
 
     <div class="acknowledge">
